@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
     session_start();
     if(isset($_SESSION['unique_id'])){
@@ -18,23 +17,5 @@
     }else{
         header("location: main.php");
     }
-=======
-<?php
-    session_start();
-    if(isset($_SESSION['unique_id'])){
-        include_once "connect.php";
-        $logout_id = mysqli_real_escape_string($conn, $_GET['logout_id']);
-        if(isset($logout_id)){
-            $status = "offline";
-            $sql = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id={$_GET['logout_id']}");
-            if($sql){
-                session_unset();
-                session_destroy();
-                header("location: main.php");
-            }
-        }else{
-            header("location: home.php");
-        }
-    }
->>>>>>> refs/remotes/origin/master
+
 ?>
