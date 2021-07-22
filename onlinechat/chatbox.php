@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 <?php 
   session_start();
@@ -406,13 +406,6 @@ xhr.send("searchTerm=" + searchTerm);
         
 </body>
 </html>
-=======
-
-<body>
-        
-        <img src="images/'.$row['image'].'" alt="" style="margin-top: 15px;width: 35px; height: 35px; border-radius: 50%;"> <div class="details"><span style="font-size: 18px;font-weight: bolder;">'.$row['userid'] .'</span><p style="font-weight: lighter;color: gray;">'.$row['status'].'</p> </div>
 
 
 
-</body>
->>>>>>> refs/remotes/origin/master
